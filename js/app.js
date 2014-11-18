@@ -9,16 +9,17 @@
     	if(lastname == undefined){
     		return "Calculating..."
     	}
-    		
-
+    	
     	return firstname + " 'The Carrot' " + lastname
     }
 
     refreshCarrotFact = function(){
     	var randomnumber= Math.floor(Math.random()*carrotFacts().length)
-    	$("#carrotfacts").fadeOut()
-    	$("#carrotfacts").text(carrotFacts()[randomnumber])
-    	$("#carrotfacts").fadeIn()
+
+    	$('#carrotfacts').fadeOut('fast', function() {
+    		$(this).text(carrotFacts()[randomnumber]).fadeIn('fast');
+    	});
+
     }
 
     $(document).ready(function () {
