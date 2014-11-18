@@ -3,7 +3,7 @@
     	var lastname = name.split(" ")[1]
 
     	if(firstname == undefined){
-    		return "Type in your name!"
+    		
     	}
 
     	if(lastname == undefined){
@@ -26,6 +26,11 @@
     	$("#nameInput").keyup(function(event) {
     		$("#nameOutput").text(carrotName($("#nameInput").val()))
     	});
+
+    	$("#clearButton").click(function(){
+    		$("#nameInput").val("")
+    		$("#nameOutput").text("Type in your name!")
+    	})
 
     	refreshCarrotFact()
     	window.setInterval(function(){refreshCarrotFact()}, 5000);
