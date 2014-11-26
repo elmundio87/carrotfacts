@@ -31,6 +31,7 @@
     	$("#clearButton").click(function(){
     		$("#nameInput").val("")
     		$("#nameOutput").text("Type in your name!")
+            $(document.body).snowfall('clear');
     	})
 
     	refreshCarrotFact()
@@ -39,5 +40,5 @@
     });
 
     $( ".dancingCarrot" ).click(function() {
-        $(document).snow({ SnowImage: "img/dancingcarrot_snow.gif", Quantity: 30});
+        $(document.body).snowfall({flakeCount : 100, image :"img/dancingcarrot_snow.gif", minSize: 75, maxSize: 125});
     });

@@ -1,0 +1,39 @@
+html, body{
+	height: 100%;
+}
+
+body {
+	overflow: hidden
+}
+
+.dancingCarrot {
+	position:absolute;
+	top:30%;
+	height:300px;
+	cursor:pointer
+}
+
+#carrotfactsdiv {
+	position:absolute;
+	bottom:0px;
+	height:80px;
+	width:100%;
+	background:orange;
+	text-align:center;
+	font-size:25px;
+	color:white;
+	padding-top:10px;
+	z-index: 10000000000
+}
+
+.left {
+	left:0px
+}
+
+.right {
+	right:0px
+}
+
+#clearButton {
+	z-index: 10000000000000;
+}
