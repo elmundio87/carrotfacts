@@ -36,5 +36,8 @@
     	refreshCarrotFact()
     	window.setInterval(function(){refreshCarrotFact()}, 5000);
 
+    });
 
+    $( ".dancingCarrot" ).click(function() {
+        $(document).snow({ SnowImage: "img/dancingCarrot_snow.gif", Quantity: 30});
     });
