@@ -2,12 +2,12 @@
     	var firstname = name.split(" ")[0]
     	var lastname = name.split(" ")[1]
 
-    	if(firstname == undefined){
-    		
+    	if(firstname == undefined || firstname == ""){
+    		return "Type in your name!"
     	}
 
-    	if(lastname == undefined){
-    		return "Calculating..."
+    	if(lastname == undefined || lastname == ""){
+    		return "And your surname!"
     	}
     	
     	return firstname + " 'The Carrot' " + lastname
