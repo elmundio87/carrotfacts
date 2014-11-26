@@ -39,5 +39,5 @@
     });
 
     $( ".dancingCarrot" ).click(function() {
-        $(document).snow({ SnowImage: "img/dancingCarrot_snow.gif", Quantity: 30});
+        $(document).snow({ SnowImage: "img/dancingcarrot_snow.gif", Quantity: 30});
     });
